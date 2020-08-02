@@ -1,6 +1,6 @@
-#-------------------------
+#------------------------------
 # ABOUT ENUMERATE
-#-------------------------
+#------------------------------
 
 # Python iterates directly over the values of a list - (does not require us to index variables manually beforehand)
 # In other languages you iterate over the length of an array by an index, then use the index to get the value at that location
@@ -8,9 +8,9 @@
 # Enumerate is a built in function
 # It returns both the index and value of an element while iterating
 
-#-------------------------
+#------------------------------
 # ENUMERATE LISTS
-#-------------------------
+#------------------------------
 
 # Create a list to enumerate
 fruit = ["apple", "pear", "orange", "cherry", "grape", "watermelon", "banana", "grapefruit"]
@@ -27,9 +27,9 @@ for index, value in enumerate(fruit):
 print()
 print("-" *20)
 
-#-------------------------
+#------------------------------
 # ENUMERATE TUPLES
-#-------------------------
+#------------------------------
 
 # Convert the list into a tuple - sort ascending (to differentiate during print)
 more_fruit = tuple(fruit)
@@ -46,9 +46,9 @@ for index, value in enumerate(more_fruit):
 print()
 print("-" *20)
 
-#-------------------------
+#------------------------------
 # ENUMERATE A LIST OF TUPLES
-#-------------------------
+#------------------------------
 
 # If there are tuples in your lists you do things a bit differently
 people = [("John", "Boy", 34), ("James", "Boy", 36), ("Jamie", "Girl", 4)]
@@ -107,9 +107,9 @@ print("That make's", (counter + 1), "fruit.")
 print()
 print("-" *20)
 
-#-------------------------
+#------------------------------
 # CUSTOM STARTING INDEX
-#-------------------------
+#------------------------------
 
 # Use a custom start parameter (optional)
 print("Custom Start Parameter:")
@@ -125,9 +125,9 @@ for index, value in enumerate(fruit, start=1):
 print("\n")
 print("-" *20)
 
-#-------------------------
+#------------------------------
 # NO DICTIONARIES
-#-------------------------
+#------------------------------
 
 # Dictionaries and sets are not sequences - their items don't have an index (and don't need one)
 # To iterate over 'keys and values' of a dictionary (a common operation) use the following:
@@ -143,9 +143,9 @@ for key, value in my_stocks.items():
 print()
 print("-" *20)
 
-#-------------------------
+#------------------------------
 # NO SETS
-#-------------------------
+#------------------------------
 
 # Sets are unordered, so we can't access items using indices (like a list)
 # To iterate over a set just use a regular loop
@@ -153,9 +153,9 @@ print("-" *20)
     # for value in my_set:
     #     print(value)
 
-#-------------------------
+#------------------------------
 # THE ENUMERATE OBJECT
-#-------------------------
+#------------------------------
 
 # In Python, the enumerate function returns a Python object of type enumerate
 # Yes, there is an enumerate built-in function and an enumerate object
